@@ -8,6 +8,8 @@
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/
 js/bootstrap.min.js"></script>
 <link rel="stylesheet" href="css/bootstrap.css">
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
 <script type="text/javascript" src="js/bootstrap.js"></script>
 <style>
 
@@ -46,16 +48,22 @@ border-image: auto;
             text-align:center;
         }
 
+        /* Sabit konumda kalması için */
+        .sabitKonum {
+            position: fixed;
+        }
+
 
 </style>
 
     </head>
+
     <body>
         <!-- EN ÜST KISIMDAKİ BAŞLIKLAR -->
 
         <nav class="nav nav-pills nav-fill">
-            <a class="nav-item nav-link active" href="SonHali.html">Muhammed GÜNTAY</a>
-            <a class="nav-item nav-link" href="#">KARS</a>
+            <a class="nav-item nav-link active" href="WebOdevi.html">Muhammed GÜNTAY</a>
+            <a class="nav-item nav-link" href="Kars.html">KARS</a>
             <a class="nav-item nav-link" href="#">ÖZGEÇMİŞ</a>
             <a class="nav-item nav-link" href="#">MİRASIMIZ</a>
             <a class="nav-item nav-link disabled" href="#">İLGİ ALANI</a>
@@ -80,7 +88,13 @@ border-image: auto;
       </div>
     </div>
   </div>
-  
+
+  <!-- Müzik durdurma ve başlatma butonu /başlangıç --> 
+
+  <button class="btn btn-primary" id="musicControlButton" type="button">Müzik Durdur/Başlat</button>
+
+
+
 
 <!-- Doldurma barı /başlangıç --> 
 
@@ -97,13 +111,13 @@ border-image: auto;
 
 <!--İçerik kısmı /Başlangıç --> 
 
-<br> <br><br> <br><br> <br>
+<br> <br>
 
 
 
 <div class="row">
     <div class="col-4">
-      <nav id="navbar-example3" class="h-100 flex-column align-items-stretch pe-4 border-end">
+      <nav id="navbar-example3" class="h-100 flex-column align-items-stretch pe-4 border-end & sabitKonum">
         <nav class="nav nav-pills flex-column">
           <a class="nav-link" href="#item-1">Mutsuz Hayata Başlangıç</a>
           <nav class="nav nav-pills flex-column">
@@ -127,7 +141,7 @@ border-image: auto;
           <table>
             <tr>
                 <td>2000 Yılında İstanbul Küçükçekmece'de doğdum. Kaldığım ev Atatürk Havalimanı'na baktığı için dışarıyı izlemeye bayılırdım. Bir de ablam var. Onun dışında başka bir şey yoktu, zaten gerek de yok. Buradan ablama sevgiler &lt;3  </td>
-                 <td>  <a  href="https://www.havayolu101.com/2022/05/10/istanbul-ataturk-havalimani-millet-bahcesi-insaati/">
+                 <td>  <a  href="https://www.havayolu101.com/2022/05/10/istanbul-ataturk-havalimani-millet-bahcesi-insaati/" target="_blank">
             <img class="fotograflar" src="ataturkhavalimani.jpg" class="rounded float-end" alt="Atatürk Havalimanı Fotoğrafı" >  
             </a>
                 <p class="ortala"> Atatürk Havalimanı </p> </td>  </tr> 
@@ -139,7 +153,7 @@ border-image: auto;
           <table>
             <tr>
                 <td>İlk okul, orta okulu evimin dibindeki Kaya Sebati Tuncay'da okudum. Daha sonra baktım olmuyor bari sıkıcı bir hayattan kopuş için keman çalayım dedim, 3 yıl boyunca sürecek ve sonunda kültür merkezinde tek başıma bir sonatı çalacak bir serüvenin başlangıcıydı. Daha sonraları o zaman TEOG olan sınava girdim ve %25'lik dilime girerek kendimle gurur duydum [yazar burada üzgün] </td>
-                 <td>  <a  href="https://www.amazon.com.tr/GLOKAKA-Sanat%C4%B1-Kanvas-Bask%C4%B1lar-Dekorasyonu/dp/B0CCY8XTWK">
+                 <td>  <a  href="https://www.amazon.com.tr/GLOKAKA-Sanat%C4%B1-Kanvas-Bask%C4%B1lar-Dekorasyonu/dp/B0CCY8XTWK" target="_blank">
             <img class="fotograflar" src="kemancalan.jpg" class="rounded float-end" alt="Keman Çalan Bir Kız" >  
             </a>
                 <p class="ortala">  <center> Keman Çalan Biri [Ben Değilim Zaten Olamam da Bu Yağlı Boya Resmi haha]</center>
@@ -151,7 +165,7 @@ border-image: auto;
           <table>
             <tr>
                 <td>Daha sonra lise denilen yere geldim ve burada az buçuk bir şeyler öğrendim. Sağlık Meslek Lisesi'ydi. Hemşire Yardımcısı oldum. Burada da yaptık bir şeyler...Ha bir de keman çalmayı da bıraktım.Yani yaptığım şeyin iyi olacağını kim söyledi?? </td>
-                 <td>  <a  href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fhemsirekitabi.com%2Fhemsire-gorevleri-nelerdir%2F&psig=AOvVaw3IrirbRVImPfI87FF_A24N&ust=1714903497859000&source=images&cd=vfe&opi=89978449&ved=0CBQQjhxqFwoTCICX8sPf84UDFQAAAAAdAAAAABAD">
+                 <td>  <a  href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fhemsirekitabi.com%2Fhemsire-gorevleri-nelerdir%2F&psig=AOvVaw3IrirbRVImPfI87FF_A24N&ust=1714903497859000&source=images&cd=vfe&opi=89978449&ved=0CBQQjhxqFwoTCICX8sPf84UDFQAAAAAdAAAAABAD" target="_blank">
             <img class="fotograflar" src="hemsireyardimcisi.jpeg" class="rounded float-end" alt="Hemşire Yardımcısı Fotoğrafı" >  
             </a>
                 <p class="ortala">      <center> Evet sağdaki benim. Şaka şaka değilim ya da ben miyim?? [Hemşireception]. Neyse işte Hemşire Yardımcılığı Kıyafeti</center>
@@ -163,7 +177,7 @@ border-image: auto;
           <table>
             <tr>
                 <td>Tabii o kadar sürede boş da durmadık. Lise'de booll booll haytalık yaptım demek isterdim ama yok ya bir şey yapmadım [üzgün surat]. Masa tenisine bu zamanlar başladım ama işin aslı çok da oynamıyordum. </td>
-                 <td>  <a  href="https://www.trtspor.com.tr/haber/tenis/diger-tenis-haberleri/masa-tenisinde-yeni-sezon-basvurulari-basladi-212803.html">
+                 <td>  <a  href="https://www.trtspor.com.tr/haber/tenis/diger-tenis-haberleri/masa-tenisinde-yeni-sezon-basvurulari-basladi-212803.html" target="_blank">
             <img class="fotograflar" src="masatenisi.jpg" class="rounded float-end" alt="Masa Tenisi ve Raketlerinin Fotoğrafı" >  
             </a>
                 <p class="ortala">      <center> Masa Tenisi [Bu okula gelene kadar bunda iyi olduğumu düşünmüştüm :D]</center>
@@ -176,7 +190,7 @@ border-image: auto;
           <table>
             <tr>
                 <td>Baktım olacak gibi değil. Bu hayat hep böyle mi gidecek dedim ve vurdum elimi masaya? Tabi elim biraz acıdı ama... neyse YKS sınavına biraz çalışayım dedim. Tabii olmuşum o zaman 12. sınıf ama hayatımda kötü bir şey yaşıyordum. Annem 2 yıl kanserdi ve onunla da ilgileniyorduk. Daha sonra da mezun olduktan 6 ay sonra vefat etti. Ha başarı diyorduk, çalışmadım ve tabii başarısızlık arkasından geldi. 2 yıllık önlisans bölümü yazdım. </td>
-                 <td>  <a  href="https://sifiratik.co/2018/08/27/yukselen-endise-plastik-balonlar/">
+                 <td>  <a  href="https://sifiratik.co/2018/08/27/yukselen-endise-plastik-balonlar/" target="_blank">
             <img class="fotograflar" src="balonlar.jpg" class="rounded float-end" alt="Balonlar umudun temsilcisidir" >  
             </a>
                 <p class="ortala">      <center> Balonlar umudun temsilcisidir.</center>
@@ -187,8 +201,8 @@ border-image: auto;
           <h5>DGS Sınavı</h5>
           <table>
             <tr>
-                <td>Tabii o zaman çok da iyi değilmişim. Şimdi farkediyorum. Ne de olsa hayat geriye doğru bakılarak anlaşılır ama ileriye doğru yaşanır diye bir söz var. Her neyse az buçuk sınava çalıştım  5000. küsürlü bir şey oldum. Baktım sıralama iyi de olsa bu sıralamaya güzel bir şey gelmiyor. Eee bir de sanayi'de staj yaptım. Robotik Otomasyonunda. Baktım güzel yer değil. Onun motivasyonuyla bir kere daha çalışayım dedim. Zaten çok da bir seçeneğim yoktu.  </td>
-                 <td>  <a  href="http://demrobotikotomasyon.com/applications/robotik-tasima-otomasyonu/">
+                <td>Tabii o zaman çok da iyi değilmişim. Şimdi farkediyorum. Ne de olsa hayat geriye doğru bakılarak anlaşılır ama ileriye doğru yaşanır diye bir söz var. Her neyse az buçuk sınava çalıştım  5000 küsürlü bir şey oldum. Baktım sıralama iyi de olsa bu sıralamaya güzel bir şey gelmiyor. Eee bir de sanayide staj yaptım. Robotik otomasyonunda. Baktım sanayi güzel yer değil. Onun motivasyonuyla bir kere daha çalışayım dedim. Zaten çok da bir seçeneğim yoktu.  </td>
+                 <td>  <a  href="http://demrobotikotomasyon.com/applications/robotik-tasima-otomasyonu/" target="_blank">
             <img class="fotograflar" src="robotKolu.jpg" class="rounded float-end" alt="6 Eksenli Robot Kol" >  
             </a>
                 <p class="ortala">      <center> 6 Eksenli Robot Kol.</center>
@@ -199,7 +213,7 @@ border-image: auto;
           <table>
             <tr>
                 <td>Çalıştım. Hem de çok çalıştım ve sınavda 347. oldum. Evet bu sıralamaya bilgisayar mühendisliğinin durdurulamaz yükselişiyle beraber [ve benim de isteğimin bu bölüm yönünde olmasından dolayı] Sakarya Üniversitesi Bilgisayar Mühendisliği'ne yerleştim.Mutlu son[?] </td>
-                 <td>  <a  href="https://reactormag.com/5-things-albus-dumbledore-should-have-told-harry-potter/">
+                 <td>  <a  href="https://reactormag.com/5-things-albus-dumbledore-should-have-told-harry-potter/" target="_blank">
             <img class="fotograflar" src="harrypotter.jpg" class="rounded float-end" alt="Harry Potter'dan bir kare" >  
             </a>
                 <p class="ortala">      <center> Ölülere üzülme Harry yaşayanlara üzül. Özellikle KYK'da yaşayanlara. </center>
@@ -208,6 +222,64 @@ border-image: auto;
       </div>
     </div>
   </div>
+
+
+
+  <!--Müzik kısmı /Başlangıç --> 
+
+  <audio id="backgroundMusic" loop>
+    <source src="alisamadim.mp3" type="audio/mpeg">
+Müzik çalması desteklemiyor.
+</audio>
+
+  <script>
+    // Müzik kontrolü için gerekli değişkenler
+    var audio = document.getElementById('backgroundMusic');
+    var musicControlButton = document.getElementById('musicControlButton');
+    var isPlaying = true; // Varsayılan olarak müzik çalıyor
+
+    // Butona tıklama olayını dinle
+    musicControlButton.addEventListener('click', function() {
+        // Müzik çalıyorsa durdur, duruyorsa çal
+        if (isPlaying) {
+            audio.pause();
+            musicControlButton.textContent = 'Müzik Çal'; // Buton metnini değiştir
+        } else {
+            audio.play();
+            musicControlButton.textContent = 'Müzik Durdur'; // Buton metnini değiştir
+        }
+        // Durum değişikliğini güncelle
+        isPlaying = !isPlaying;
+    }); 
+
+
+
+    // Sekme etkinliğini dinle
+    document.addEventListener('visibilitychange', function() {
+        // Eğer sekme etkinse (yani görünürse)
+        if (!document.hidden) {
+            // Ses dosyasını çal
+            var audio = document.getElementById('backgroundMusic');
+            audio.play();
+        } else {
+            // Eğer sekme etkisizse (yani gizliyse)
+            // Durdurulmuşsa, müziği durdur
+            var audio = document.getElementById('backgroundMusic');
+            audio.pause();
+        }
+    });
+
+    
+</script>
+
+  <!--Müzik kısmı /Bitiş --> 
+
+
+
+
+
+
+
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>

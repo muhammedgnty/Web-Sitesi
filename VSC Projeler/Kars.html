@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+<meta charset="UTF-8">
+<title> KarsVEGAS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/
+js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="css/bootstrap.css">
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+<script type="text/javascript" src="js/bootstrap.js"></script>
+</head>
+
+<style>
+
+.piksel200 {
+width: 1520px;
+height: 80px;
+image-resolution:auto;
+border-image: auto;
+}
+
+.hosGeldiniz {
+    background-color: aqua;
+    color: red;
+    font-family: fantasy;
+}
+.ortala{
+            text-align:center;
+        }
+
+        #baslik1,#baslik3{
+    font-size: small;
+    background-color: red;
+    color:white;
+}
+#baslik2{
+    font-size: large;
+    background-color: white;
+    color: red;
+    font-style: italic;
+}
+
+.altBaslik {
+    text-align: center;
+    background-color: aqua;
+    color: blue;
+}
+
+</style>
+
+<body>
+    <!-- EN ÜST KISIMDAKİ BAŞLIKLAR -->
+
+    <nav class="nav nav-pills nav-fill">
+        <a class="nav-item nav-link active" href="WebOdevi.html">Muhammed GÜNTAY</a>
+        <a class="nav-item nav-link" href="Kars.html">KARS</a>
+        <a class="nav-item nav-link" href="#">ÖZGEÇMİŞ</a>
+        <a class="nav-item nav-link" href="#">MİRASIMIZ</a>
+        <a class="nav-item nav-link disabled" href="#">İLGİ ALANI</a>
+      </nav>
+      <a href="https://www.youtube.com/watch?v=aULM7vv8llk" target="_blank" >
+      <img class="piksel200" src="turkbayragi.jpg" class="rounded float-end" alt="türk bayrağı">
+    </a>
+      <p class="hosGeldiniz & ortala" >HOŞ GELDİNİZ<p>
+
+<!-- Başlığın alt kısımları --> 
+
+<div class="container text-center">
+    <div class="row">
+      <div class="col" id="baslik1">
+        Doğunun Parlayan        
+      </div>
+      <div class="col" id="baslik2">
+        YILDIZI
+      </div>
+      <div class="col" id="baslik3">
+        KarsVEGAS
+      </div>
+    </div>
+  </div>
+
+  <button class="btn btn-primary" id="musicControlButton" type="button">Müzik Durdur/Başlat</button>
+<br> <br>
+
+<p class="altBaslik"> KarsVEGAS Tarihi  </p>
+ 
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">İçerik 1</div>
+        <div class="col-md-4">İçerik 2</div>
+        <div class="col-md-4">İçerik 3</div>
+
+    </div>
+</div>
+
+
+
+
+
+
+
+
+<!--Müzik kısmı /Başlangıç --> 
+
+<audio id="backgroundMusic" loop>
+    <source src="sarikamis.mp3" type="audio/mpeg">
+Müzik çalması desteklemiyor.
+</audio>
+
+  <script>
+    // Müzik kontrolü için gerekli değişkenler
+    var audio = document.getElementById('backgroundMusic');
+    var musicControlButton = document.getElementById('musicControlButton');
+    var isPlaying = true; // Varsayılan olarak müzik çalıyor
+
+    // Butona tıklama olayını dinle
+    musicControlButton.addEventListener('click', function() {
+        // Müzik çalıyorsa durdur, duruyorsa çal
+        if (isPlaying) {
+            audio.pause();
+            musicControlButton.textContent = 'Müzik Çal'; // Buton metnini değiştir
+        } else {
+            audio.play();
+            musicControlButton.textContent = 'Müzik Durdur'; // Buton metnini değiştir
+        }
+        // Durum değişikliğini güncelle
+        isPlaying = !isPlaying;
+    }); 
+
+
+
+    // Sekme etkinliğini dinle
+    document.addEventListener('visibilitychange', function() {
+        // Eğer sekme etkinse (yani görünürse)
+        if (!document.hidden) {
+            // Ses dosyasını çal
+            var audio = document.getElementById('backgroundMusic');
+            audio.play();
+        } else {
+            // Eğer sekme etkisizse (yani gizliyse)
+            // Durdurulmuşsa, müziği durdur
+            var audio = document.getElementById('backgroundMusic');
+            audio.pause();
+        }
+    });
+
+    
+</script>
+
+  <!--Müzik kısmı /Bitiş --> 
+
+
+
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+      
+          </body>
