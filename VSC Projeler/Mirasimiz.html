@@ -67,7 +67,52 @@ border-image: auto;
       <p class="hosGeldiniz & ortala" >HOŞ GELDİNİZ<p>
 
 
+<!--Müzik kısmı /Başlangıç --> 
 
+<audio id="backgroundMusic" loop>
+    <source src="sarikamis.mp3" type="audio/mpeg">
+Müzik çalması desteklemiyor.
+</audio>
+
+  <script>
+    // Müzik kontrolü için gerekli değişkenler
+    var audio = document.getElementById('backgroundMusic');
+    var musicControlButton = document.getElementById('musicControlButton');
+    var isPlaying = true; // Varsayılan olarak müzik çalıyor
+
+    // Butona tıklama olayını dinle
+    musicControlButton.addEventListener('click', function() {
+        // Müzik çalıyorsa durdur, duruyorsa çal
+        if (isPlaying) {
+            audio.pause();
+            musicControlButton.textContent = 'Müzik Çal'; // Buton metnini değiştir
+        } else {
+            audio.play();
+            musicControlButton.textContent = 'Müzik Durdur'; // Buton metnini değiştir
+        }
+        // Durum değişikliğini güncelle
+        isPlaying = !isPlaying;
+    }); 
+
+
+
+    // Sekme etkinliğini dinle
+    document.addEventListener('visibilitychange', function() {
+        // Eğer sekme etkinse (yani görünürse)
+        if (!document.hidden) {
+            // Ses dosyasını çal
+            var audio = document.getElementById('backgroundMusic');
+            audio.play();
+        } else {
+            // Eğer sekme etkisizse (yani gizliyse)
+            // Durdurulmuşsa, müziği durdur
+            var audio = document.getElementById('backgroundMusic');
+            audio.pause();
+        }
+    });
+
+    
+</script>
 
 
 
