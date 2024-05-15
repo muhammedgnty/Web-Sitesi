@@ -4,12 +4,10 @@
 <meta charset="UTF-8">
 <title> KarsVEGAS</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-<script src="http://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/
-js/bootstrap.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 <link rel="stylesheet" href="css/bootstrap.css">
 <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.js"></script>
 </head>
 
@@ -43,11 +41,33 @@ border-image: auto;
     font-style: italic;
 }
 
-.altBaslik {
-    text-align: center;
-    background-color: aqua;
-    color: blue;
+.baslikYaziTipi1 {
+  color:chocolate;
+  background-color: black;
+  font-family:cursive;
+  font-size:xx-large;
 }
+
+
+body {
+    background-color:aliceblue;
+}
+
+.piksel1920i840 {
+width:600px;
+height: 600px;
+
+}
+
+.sabitleme {
+  
+    top: 0; /* Sayfanın üstüne sabitlemek için */
+    left: 0; /* Sayfanın soluna sabitlemek için */
+    width: 100%; /* Ekran genişliği kadar genişlik */
+    z-index: 1000; /* Gerekirse diğer öğelerin üstünde kalacak bir z-indeksi */
+    
+}
+
 
 </style>
 
@@ -81,22 +101,141 @@ border-image: auto;
       </div>
     </div>
   </div>
+<br>
 
   <button class="btn btn-primary" id="musicControlButton" type="button">Müzik Durdur/Başlat</button>
-<br> <br>
 
-<p class="altBaslik"> KarsVEGAS Tarihi  </p>
+  <!-- iÇERİK -->
+<p class="ortala">
+<nav id="navbar-example2" class="navbar bg-body-tertiary px-3 mb-3 & sabitleme">
+  <a class="navbar-brand" href="#"></a>
+  <ul class="nav nav-pills">
+    <li class="nav-item">
+      <a class="nav-link" href="#scrollspyHeading1">Şehrimin ŞANLI Tarihi </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#scrollspyHeading2">Güzel Tarafları</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#scrollspyHeading3">Kötü Tarafları</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#scrollspyHeading4">KarsSpor</a>
+    </li>
+  </ul>
+</p>
+</nav>
+
+
+
+<div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
  
-<div class="container">
-    <div class="row">
-        <div class="col-md-4">İçerik 1</div>
-        <div class="col-md-4">İçerik 2</div>
-        <div class="col-md-4">İçerik 3</div>
+  <h4 id="scrollspyHeading1" class="ortala & baslikYaziTipi1">Kars'ım</h4>
 
+  <p>
+  <table>
+  <tr>
+    <td>
+  <p>Kars adının kaynağı Karsaklardan gelmektedir. Kars, “Türkiye’deki en eski Türkçe il adı” olma ünvanına sahiptir. </p>
+</td>
+<td>
+    <div class="card" style="width: 20rem;"> 
+      <a href="http://www.kars.gov.tr/tarihce"  target="_blank">
+        <img src="karstarihce.jpg" class="card-img-top" alt="Kars Karakalem Fotoğrafı">
+      <div class="card-body">
+        <p class="card-text & ortala">Kars'ın Karakalem Fotoğrafı</p>
+      </div>
+      </a>
     </div>
+</td>
+</tr>
+</table>
+  </p>
+
+
+
+
+ 
+  <p> 
+  <table>
+  <tr>
+    <td>
+  
+    <ul>
+
+    <li> M.Ö. 5000-4000 HURİLER</li>
+    <li> M.Ö. 9. Yüzyılda URARTULAR </li> 
+    <li> M.Ö. 665 yılında İSKİTLER </li> 
+    <li> M.Ö. 145 yılından itibaren PARTLAR bölgede egemen olmuşlar ve KARSAKLI BEYLİĞİ’ni kurmuşlardır. KARSAKLAR M.Ö. 2. Yüzyıldan M.S. 5. Yüzyıl ortalarına kadar Kars’ta hüküm sürmüşlerdir.
+    430 yılında SASANİLER’e geçen bölge; uzun süre Sasani, Bizans ve Araplar arasında savaş alanı olmuştur. </li>
+    <li> 1064 yılında SELÇUKLULAR </li>
+    <li> 1200 yılında GÜRCÜLER</li>
+    <li> 1239’da MOĞOLLAR </li>
+    <li> 1406’da KARAKOYUNLULAR </li> 
+    <li> 1467’de de AKKOYUNLULAR bölgede egemen olmuştur. </li>
+   <li> 1535 yılında Osmanlı İmparatorluğu’nun topraklarına katılmıştır. </li>
+
+   </ul> 
+</td>
+<!-- Yanındaki sağa sola kaydırma yeri (Carousel) --> 
+<td>
+  <div id="carouselExampleCaptions" class="carousel slide" ">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active ">
+       <a href="https://tr.wikipedia.org/wiki/Hurriler" target="_blank" > 
+         <img src="hurri.jpg" class="d-block w-100 & piksel1920i840" alt="Louvre Aslanı ve bilinen ilk Hurrice Tablet">
+       </a>
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Louvre Aslanı ve bilinen ilk Hurrice Tablet</h5>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <a href="https://tr.wikipedia.org/wiki/Urartular"  target="_blank" > 
+          <img src="urartu.jpg" class="d-block w-100 & piksel1920i840" alt="Arin BERD tarafından 1958 yılında bulunan ve Erivan'daki Erebuni Müzesi'nde sergilenen tablet.">
+        </a>
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Arin BERD tarafından 1958 yılında bulunan ve Erivan'daki Erebuni Müzesi'nde sergilenen tablet.</h5>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <a href="https://tr.wikipedia.org/wiki/%C4%B0skitler"    target="_blank" > 
+          <img src="iskitler.jpg" class="d-block w-100 & piksel1920i840"  " alt="İskitlere ait, altından bir kemer tokası, MÖ. 7. yüzyıl.">
+        </a>
+        <div class="carousel-caption d-none d-md-block">
+          <h5>İskitlere ait, altından bir kemer tokası, MÖ. 7. yüzyıl.</h5>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Önceki</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Sonraki</span>
+    </button>
+  </div>
+</td>
+
+</tr>
+</table>
+  </p>
+
+  <h4 id="scrollspyHeading2" class="ortala & baslikYaziTipi1">Second Heading</h4>
+  <p> ... </p>
+
+  <h4 id="scrollspyHeading3" class="ortala">Third heading</h4>
+  <p>...</p>
+  <h4 id="scrollspyHeading4" class="ortala">Fourth heading</h4>
+  <p>...</p>
+  <h4 id="scrollspyHeading5" class="ortala">Fifth heading</h4>
+  <p>...</p>
 </div>
-
-
 
 
 
@@ -135,11 +274,7 @@ Müzik çalması desteklemiyor.
     // Sekme etkinliğini dinle
     document.addEventListener('visibilitychange', function() {
         // Eğer sekme etkinse (yani görünürse)
-        if (!document.hidden) {
-            // Ses dosyasını çal
-            var audio = document.getElementById('backgroundMusic');
-            audio.play();
-        } else {
+        if (document.hidden) {
             // Eğer sekme etkisizse (yani gizliyse)
             // Durdurulmuşsa, müziği durdur
             var audio = document.getElementById('backgroundMusic');
@@ -147,16 +282,11 @@ Müzik çalması desteklemiyor.
         }
     });
 
+
     
 </script>
 
   <!--Müzik kısmı /Bitiş --> 
-
-
-
-
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
       
           </body>
+</html>

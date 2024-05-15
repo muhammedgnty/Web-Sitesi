@@ -53,6 +53,10 @@ border-image: auto;
             position: fixed;
         }
 
+        body {
+    background-color:aliceblue;
+}
+
 
 </style>
 
@@ -254,20 +258,17 @@ Müzik çalması desteklemiyor.
 
 
 
-    // Sekme etkinliğini dinle
-    document.addEventListener('visibilitychange', function() {
+  // Sekme etkinliğini dinle
+  document.addEventListener('visibilitychange', function() {
         // Eğer sekme etkinse (yani görünürse)
-        if (!document.hidden) {
-            // Ses dosyasını çal
-            var audio = document.getElementById('backgroundMusic');
-            audio.play();
-        } else {
+        if (document.hidden) {
             // Eğer sekme etkisizse (yani gizliyse)
             // Durdurulmuşsa, müziği durdur
             var audio = document.getElementById('backgroundMusic');
             audio.pause();
         }
     });
+
 
     
 </script>
