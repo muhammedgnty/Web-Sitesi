@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>İletişim</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        .ataturk {
+            color: red;
+            background-color: white;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .ortala {
+            text-align: center;
+        }
+
+        .piksel200 {
+            width: 1520px;
+            height: 80px;
+            image-resolution: auto;
+            border-image: auto;
+        }
+
+        .body2 {
+            background-color: green;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- EN ÜST KISIMDAKİ BAŞLIKLAR -->
+    <nav class="nav nav-pills nav-fill">
+        <a class="nav-item nav-link active" href="WebOdevi.html">Muhammed GÜNTAY</a>
+        <a class="nav-item nav-link" href="Kars.html">KARS</a>
+        <a class="nav-item nav-link" href="Ozgecmis.html">ÖZGEÇMİŞ</a>
+        <a class="nav-item nav-link" href="Mirasimiz.html">MİRASIMIZ</a>
+        <a class="nav-item nav-link" href="ilgiAlani.html">İLGİ ALANI</a>
+        <a class="nav-item nav-link" href="iletisim.html">İLETİŞİM</a>
+    </nav>
+    <a href="https://www.youtube.com/watch?v=aULM7vv8llk" target="_blank">
+        <img class="piksel200" src="turkbayragi.jpg" class="rounded float-end" alt="türk bayrağı">
+    </a>
+
+    <!-- Başlığın alt kısımları -->
+
+  <button class="btn btn-primary" id="musicControlButton" type="button">Müzik Çalmak için Tıkla</button> Sorunları okurken kafamda çalışan şarkı
+
+    <a href="https://www.youtube.com/watch?v=AoLb52cpFyU" target="_blank">
+        <p class="ortala ataturk"><img src="ataturk.png" alt="Atatürk"> 1881-1938, Minnetle...</p>
+    </a>
+    <div class="body2">
+        <h2 class="ortala">Soru ve Sorunlarınız İçin İletişim Hattı</h2>
+        <table>
+            <tr>
+                <td>
+                    <form name="form1" method="post" enctype="multipart/form-data">
+                        <h3> Formdaki Hataları Düzeltin! </h3>
+                        <br> <input type="text" name="Baslik" value="Soru ve Sorunlar Formu" readonly disabled><br>
+                        <label for="adi">Adı : </label><br>
+                        <input type="text" name="adi" required autocomplete="off"><br>
+                        <label for="soyadi">Soyadı : </label><br>
+                        <input type="text" name="soyadi" required autocomplete="off"><br>
+                        <label for="telefon">Telefon : </label><br>
+                        <input type="text" name="telefon" size="11" value="" pattern="[0-9]{11}" placeholder="05123721141" required autocomplete="off"><br>
+                        Kullanıcı Adı:<br>
+                        <input type="email" name="email" required autocomplete="off"><br>
+                        Şifre:<br>
+                        <input type="password" name="sifre" required autocomplete="off"><br><br>
+                        Cinsiyet: <br>
+                        <input type="radio" name="cinsiyet" value="erkek" checked>Erkek<br>
+                        <input type="radio" name="cinsiyet" value="kadin">Kadın <br>
+                        <input type="radio" name="cinsiyet" value="diger">Diğer<br><br>
+                        Sorun Ne Hakkında? <br>
+                        <input type="checkbox" name="sorun1" value="GenelSorun"> Genel Sorun<br>
+                        <input type="checkbox" name="sorun2" value="PerformansSorunu">Performans Sorunu<br>
+                        <input type="checkbox" name="sorun3" value="DigerSorun">Diğer Sorun [Lütfen Açıklamada Belirtiniz.]<br><br>
+                        Ekran Görüntüsü Ekleyiniz:<br>
+                        <input type="file" name="dosya" multiple><br>
+                        Sitede en beğendiğiniz şeyi belirtiniz <br>
+                        <select name="begenilenOzellikler" required>
+                            <option value="renkUyumu">Renk Uyumu</option>
+                            <option value="BoostrapKullanimi">Bootstrap Kullanımı</option>
+                            <option value="Fotograflar">Fotoğraflar</option>
+                            <option value="herSey">Her şeyiyle mükemmel site [kalp]</option>
+                        </select><br>
+                        Bir daha buraya uğrar mısınız? <br>
+                        <input list="gelmekKonusu" name="gelmek" required>
+                        <datalist id="gelmekKonusu">
+                            <option value="gelirim">
+                            <option value="belki">
+                            <option value="gelmem">
+                        </datalist><br>
+                        Diğer Sorunu İşaretlediyseniz Buraya Açıklayınız.<br>
+                        <textarea name="mesaj" rows="10" cols="30" placeholder="Anlat derdini ama kısa olsun..."></textarea><br>
+                        <input type="reset" value="Bilgileri Sıfırla"> <input type="button" value="GÖNDER" onclick="showValues()">
+                        <input type="submit" formaction="iletisim2.php" formmethod="post" value="POST İLE GÖNDER">
+                    </form>
+                </td>
+                <td>
+                    <p id="formYazar"></p>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+     <!--Müzik kısmı /Başlangıç --> 
+
+  <audio id="backgroundMusic" loop>
+    <source src="umrumdaDegil.mp3" type="audio/mpeg">
+Müzik çalması desteklemiyor.
+</audio>
+    <script>
+        function showValues() {
+            var x = document.forms["form1"];
+            var text = "";
+            for (var i = 0; i < x.length; i++) {
+                text += x.elements[i].value + "<br>";
+            }
+            document.getElementById("formYazar").innerHTML = text;
+        }
+
+
+        // Müzik kontrolü için gerekli değişkenler
+        var audio = document.getElementById('backgroundMusic');
+        var musicControlButton = document.getElementById('musicControlButton');
+        var isPlaying = false; // Varsayılan olarak müzik çalmıyor
+
+        // Butona tıklama olayını dinle
+        musicControlButton.addEventListener('click', function () {
+            // Müzik çalıyorsa durdur, duruyorsa çal
+            if (isPlaying) {
+                audio.pause();
+                musicControlButton.textContent = 'Müzik Çalmak için Tıkla'; // Buton metnini değiştir
+            } else {
+                audio.play();
+                musicControlButton.textContent = 'Müzik Durdur'; // Buton metnini değiştir
+            }
+            // Durum değişikliğini güncelle
+            isPlaying = !isPlaying;
+        });
+
+        // Sekme etkinliğini dinle
+        document.addEventListener('visibilitychange', function () {
+            if (document.hidden) {
+                audio.pause();
+                musicControlButton.textContent = 'Müzik Durdu';
+            }
+        });
+    </script>
+
+   
+</body>
+
+</html>
