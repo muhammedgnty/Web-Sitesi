@@ -1,4 +1,3 @@
-
 // Müzik kontrolü için gerekli değişkenler
 var audio = document.getElementById('backgroundMusic');
 var musicControlButton = document.getElementById('musicControlButton');
@@ -18,19 +17,13 @@ musicControlButton.addEventListener('click', function () {
   isPlaying = !isPlaying;
 });
 
-
-
 // Sekme etkinliğini dinle
 document.addEventListener('visibilitychange', function () {
   // Eğer sekme etkinse (yani görünürse)
   if (document.hidden) {
     // Eğer sekme etkisizse (yani gizliyse)
     // Durdurulmuşsa, müziği durdur
-    var audio = document.getElementById('backgroundMusic');
     audio.pause();
     musicControlButton.textContent='Müzik Durdu';
   }
 });
-
-
-
