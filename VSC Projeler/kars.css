@@ -1,0 +1,70 @@
+
+  .piksel200 {
+    width: 1520px;
+    height: 80px;
+    image-resolution: auto;
+    border-image: auto;
+  }
+
+  .hosGeldiniz {
+    background-color: aqua;
+    color: red;
+    font-family: fantasy;
+  }
+
+  .ortala {
+    text-align: center;
+  }
+
+  #baslik1,
+  #baslik3 {
+    font-size: small;
+    background-color: red;
+    color: white;
+  }
+
+  #baslik2 {
+    font-size: large;
+    background-color: white;
+    color: red;
+    font-style: italic;
+  }
+
+  .baslikYaziTipi1 {
+    color: chocolate;
+    background-color: black;
+    font-family: cursive;
+    font-size: xx-large;
+  }
+
+  .altbaslik {
+    color: darkblue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
+    font-style: oblique;
+    text-decoration: underline;
+  }
+
+  .piksel600 {
+    width: 600px;
+    height: 600px;
+
+  }
+
+  .slaytBaslik {
+    background-color: white;
+    color: blue;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: x-large;
+  }
+
+  .fontBuyut{
+    font-size: x-large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+ 
+  .ataturk {
+  color:red;
+  background-color: white;
+  font-family: 'Times New Roman', Times, serif;
+}

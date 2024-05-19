@@ -1,0 +1,49 @@
+
+
+.piksel200 {
+width: 1520px;
+height: 80px;
+image-resolution:auto;
+border-image: auto;
+}
+
+.hosGeldiniz {
+    background-color: aqua;
+    color: red;
+    font-family: fantasy;
+}
+
+#baslik1,#baslik3{
+    font-size: small;
+    background-color: red;
+    color:white;
+}
+#baslik2{
+    font-size: large;
+    background-color: white;
+    color: red;
+    font-style: italic;
+}
+
+.fotograflar {
+            width:300px;
+            height:300px;
+ text-align:right;
+        }
+
+        .ortala{
+            text-align:center;
+        }
+
+        /* Sabit konumda kalması için */
+        .sabitKonum {
+            position: fixed;
+        }
+
+       
+
+.ataturk {
+  color:red;
+  background-color: white;
+  font-family: 'Times New Roman', Times, serif;
+}

@@ -7,29 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <style>
-        .ataturk {
-            color: red;
-            background-color: white;
-            font-family: 'Times New Roman', Times, serif;
-        }
+    <link rel="stylesheet" href="iletisim.css">
+    <script type="text/javascript" src="iletisim.js"></script>
 
-        .ortala {
-            text-align: center;
-        }
 
-        .piksel200 {
-            width: 1520px;
-            height: 80px;
-            image-resolution: auto;
-            border-image: auto;
-        }
-
-        .body2 {
-            background-color: green;
-            color: white;
-        }
-    </style>
+   
 </head>
 
 <body>
@@ -47,7 +29,8 @@
     </a>
 
     <!-- Başlığın alt kısımları -->
-    <button class="btn btn-primary" id="musicControlButton" type="button">Müzik Çalmak için Tıkla</button>Sorunları
+    <button class="btn btn-primary" id="musicControlButton" type="button">Müzik Çalmak için Tıkla</button> &nbsp; Soru
+    ve Sorunları
     okurken kafamda çalan şarkı
     <a href="https://www.youtube.com/watch?v=AoLb52cpFyU" target="_blank">
         <p class="ortala ataturk"><img src="ataturk.png" alt="Atatürk"> 1881-1938, Minnetle...</p>
@@ -56,7 +39,7 @@
         <h2 class="ortala">Soru ve Sorunlarınız İçin İletişim Hattı</h2>
         <table>
             <tr>
-                <h3 id="problem"> </h3>
+                <h5 class="error" id="problem"> </h5>
                 <td>
                     <form name="form1" method="post" enctype="multipart/form-data">
                         <br> <input type="text" name="Baslik" value="Soru ve Sorunlar Formu" readonly disabled><br>
@@ -67,8 +50,9 @@
                         <label for="telefon">Telefon : </label><br>
                         <input type="text" name="telefon" size="11" value="" pattern="[0-9]{11}"
                             placeholder="05123721141" required autocomplete="off"><br>
-                        Kullanıcı Adı:<br>
-                        <input type="email" name="email" required autocomplete="off"><br>
+                        Kullanıcı Adı [email]:<br>
+                        <input type="email" name="email" placeholder="serseri_kalbim@gmail.com" required
+                            autocomplete="off"><br>
                         Şifre:<br>
                         <input type="password" name="sifre" required autocomplete="off"><br><br>
                         Cinsiyet: <br>
@@ -99,14 +83,11 @@
                         Diğer Sorunu İşaretlediyseniz Buraya Açıklayınız.<br>
                         <textarea name="mesaj" rows="10" cols="30"
                             placeholder="Anlat derdini ama kısa olsun..."></textarea><br>
-                        <input type="reset" value="Bilgileri Sıfırla"> <input type="button" value="GÖNDER"
-                            onclick="showValues()">
-                        <input type="submit" formaction="iletisim2.php" formmethod="post" value="POST İLE GÖNDER">
+                        <input type="reset" value="Bilgileri Sıfırla">
+                        <input type="button" value="JS ile GÖNDER" onclick="showValues()">
                     </form>
                 </td>
-                <td>
-                    <p id="formYazar"></p>
-                </td>
+
             </tr>
         </table>
     </div>
@@ -119,13 +100,8 @@
     </audio>
     <!--Müzik kısmı /Bitiş -->
 
-    <script>
-        function showValues() {
-          var x = document.getElementbyId("adi").showValues;
-          document.getElementById("formYazar").innerHTML = x;
-        }
-    </script>
-    
+   
+
 
 
 </body>

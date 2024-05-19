@@ -1,0 +1,59 @@
+
+    .piksel200 {
+        width: 1520px;
+        height: 80px;
+        image-resolution: auto;
+        border-image: auto;
+    }
+
+    .beyazFont {
+        color: white;
+    }
+
+    .piksel600 {
+        width: 600px;
+        height: 700px;
+
+    }
+
+    .baslik {
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+
+    .timesFont {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: x-large;
+    }
+
+    .hosGeldiniz {
+        background-color: aqua;
+        color: red;
+        font-family: fantasy;
+    }
+
+    .ortala {
+        text-align: center;
+    }
+
+    
+
+    .ataturk {
+        color: white;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    .resim {
+        width: 600px;
+        height: 600px;
+    }
+
+    .slaytBaslik {
+        background-color: white;
+        color: red;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: x-large;
+    }
+
+    .body2 {
+        background-color: green;
+    }

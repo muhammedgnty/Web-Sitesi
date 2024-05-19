@@ -1,0 +1,17 @@
+
+
+.ataturk {
+    color: red;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.ortala {
+    text-align: center;
+}
+
+.piksel200 {
+    width: 1520px;
+    height: 80px;
+    image-resolution: auto;
+    border-image: auto;
+}

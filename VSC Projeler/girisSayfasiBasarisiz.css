@@ -1,0 +1,10 @@
+
+        .baslik {
+            font-family: 'Times New Roman', Times, serif;
+            color: red;
+            text-align: center;
+        }
+        .resim {
+            width: 200px;
+            height: 200px;
+        }

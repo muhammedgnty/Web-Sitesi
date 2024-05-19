@@ -1,0 +1,26 @@
+
+.ataturk {
+    color: red;
+    background-color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.ortala {
+    text-align: center;
+}
+
+.piksel200 {
+    width: 1520px;
+    height: 80px;
+    image-resolution: auto;
+    border-image: auto;
+}
+
+.error {
+    color: white;
+}
+
+.body2 {
+    background-color: green;
+    color: white;
+}

@@ -6,56 +6,17 @@
     <title> CV-Özgeçmiş</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="ozgecmis.css">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="ozgecmis.js"></script>
 </head>
 
+ <!--ozgecmis.css'te tanımladığım zaman çalışmadığı için buraya yerleştirdim.-->
 <style>
-    .hosGeldiniz {
-        background-color: aqua;
-        color: red;
-        font-family: fantasy;
-    }
-
-    .piksel200 {
-        width: 1520px;
-        height: 80px;
-        image-resolution: auto;
-        border-image: auto;
-    }
-
-    .ortala {
-        text-align: center;
-    }
-
-    .altbaslik {
-        color: darkblue;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-size: large;
-        font-style: oblique;
-        text-decoration: underline;
-    }
-
     body {
-        background-color: black;
-    }
-
-    .font {
-        color: white;
-    }
-
-    .baslikFont {
-        text-decoration: underline;
-        font-style: italic;
-    }
-
-    .ataturk {
-        background-color: white;
-        color: red;
-        font-family: 'Times New Roman', Times, serif;
-    }
+    background-color: black;
+}
 </style>
 
 <body>
@@ -86,44 +47,7 @@
         Müzik çalması desteklemiyor.
     </audio>
 
-    <script>
-        // Müzik kontrolü için gerekli değişkenler
-        var audio = document.getElementById('backgroundMusic');
-        var musicControlButton = document.getElementById('musicControlButton');
-        var isPlaying = false; // Varsayılan olarak müzik çalmıyor
-
-        // Butona tıklama olayını dinle
-        musicControlButton.addEventListener('click', function () {
-            // Müzik çalıyorsa durdur, duruyorsa çal
-            if (isPlaying) {
-                audio.pause();
-                musicControlButton.textContent = 'Müzik Çalınsın'; // Buton metnini değiştir
-            } else {
-                audio.play();
-                musicControlButton.textContent = 'Müzik Durdurulsun'; // Buton metnini değiştir
-            }
-            // Durum değişikliğini güncelle
-            isPlaying = !isPlaying;
-        });
-
-
-
-        // Sekme etkinliğini dinle
-        document.addEventListener('visibilitychange', function () {
-            // Eğer sekme etkinse (yani görünürse)
-            if (document.hidden) {
-                // Eğer sekme etkisizse (yani gizliyse)
-                // Durdurulmuşsa, müziği durdur
-                var audio = document.getElementById('backgroundMusic');
-                audio.pause();
-                musicControlButton.textContent = 'Müzik Durdu';
-            }
-        });
-
-
-
-    </script>
-
+  
     <!--Müzik kısmı /Bitiş -->
 
 

@@ -5,63 +5,18 @@
     <title> Karslı Muhammed GÜNTAY</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="anasayfa.css">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="anasayfa.js"></script>
+   
   </head>
-<style>
-
-.piksel200 {
-width: 1520px;
-height: 80px;
-image-resolution:auto;
-border-image: auto;
-}
-
-.hosGeldiniz {
-    background-color: aqua;
-    color: red;
-    font-family: fantasy;
-}
-
-#baslik1,#baslik3{
-    font-size: small;
-    background-color: red;
-    color:white;
-}
-#baslik2{
-    font-size: large;
-    background-color: white;
-    color: red;
-    font-style: italic;
-}
-
-.fotograflar {
-            width:300px;
-            height:300px;
- text-align:right;
-        }
-
-        .ortala{
-            text-align:center;
-        }
-
-        /* Sabit konumda kalması için */
-        .sabitKonum {
-            position: fixed;
-        }
-
-        body {
+ <!--anasayfa.css'te tanımladığım zaman çalışmadığı için buraya yerleştirdim.-->
+  <style>
+     body {
     background-color:aliceblue;
 }
-
-.ataturk {
-  color:red;
-  background-color: white;
-  font-family: 'Times New Roman', Times, serif;
-}
-</style>
+  </style>
 
     <body>
         <!-- EN ÜST KISIMDAKİ BAŞLIKLAR -->
@@ -99,6 +54,11 @@ border-image: auto;
   <!-- Müzik durdurma ve başlatma butonu /başlangıç --> 
 
   <button class="btn btn-primary" id="musicControlButton" type="button">Müzik Çalmak için Tıkla</button>
+  <audio id="backgroundMusic" loop>
+    <source src="alisamadim.mp3" type="audio/mpeg">
+Müzik çalması desteklemiyor.
+</audio>
+
 
   <a href="https://www.youtube.com/watch?v=AoLb52cpFyU" target="_blank">
   <p class="ortala & ataturk" > <img src="ataturk.png" alt="Atatürk">  1881-1938, Minnetle... </p>
@@ -169,8 +129,8 @@ border-image: auto;
                  <td>  <a  href="https://www.amazon.com.tr/GLOKAKA-Sanat%C4%B1-Kanvas-Bask%C4%B1lar-Dekorasyonu/dp/B0CCY8XTWK" target="_blank">
             <img class="fotograflar" src="kemancalan.jpg" class="rounded float-end" alt="Keman Çalan Bir Kız" >  
             </a>
-                <p class="ortala">  <center> Keman Çalan Biri [Ben Değilim Zaten Olamam da Bu Yağlı Boya Resmi haha]</center>
-                    <center> Üzerine Tıklama Düşünülenden Pahalıymış...</center> </p> </td>  </tr> 
+                <p class="ortala">   Keman Çalan Biri [Ben Değilim Zaten Olamam da Bu Yağlı Boya Resmi haha] <br>
+                    Üzerine Tıklama Düşünülenden Pahalıymış... </p> </td>  </tr> 
         </table>
         </div>
         <div id="item-1-2">
@@ -181,8 +141,8 @@ border-image: auto;
                  <td>  <a  href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fhemsirekitabi.com%2Fhemsire-gorevleri-nelerdir%2F&psig=AOvVaw3IrirbRVImPfI87FF_A24N&ust=1714903497859000&source=images&cd=vfe&opi=89978449&ved=0CBQQjhxqFwoTCICX8sPf84UDFQAAAAAdAAAAABAD" target="_blank">
             <img class="fotograflar" src="hemsireyardimcisi.jpeg" class="rounded float-end" alt="Hemşire Yardımcısı Fotoğrafı" >  
             </a>
-                <p class="ortala">      <center> Evet sağdaki benim. Şaka şaka değilim ya da ben miyim?? [Hemşireception]. Neyse işte Hemşire Yardımcılığı Kıyafeti</center>
-                    <center> Aramızda kalsın kıyafeti hiç de sevmedim. =-] </center> </p> </td>  </tr> 
+                <p class="ortala">   Evet sağdaki benim. Şaka şaka değilim ya da ben miyim?? [Hemşireception]. Neyse işte Hemşire Yardımcılığı Kıyafeti <br>
+                    Aramızda kalsın kıyafeti hiç de sevmedim. =-] </p> </td>  </tr> 
         </table>
         </div>
         <div id="item-2">
@@ -193,7 +153,7 @@ border-image: auto;
                  <td>  <a  href="https://www.trtspor.com.tr/haber/tenis/diger-tenis-haberleri/masa-tenisinde-yeni-sezon-basvurulari-basladi-212803.html" target="_blank">
             <img class="fotograflar" src="masatenisi.jpg" class="rounded float-end" alt="Masa Tenisi ve Raketlerinin Fotoğrafı" >  
             </a>
-                <p class="ortala">      <center> Masa Tenisi [Bu okula gelene kadar bunda iyi olduğumu düşünmüştüm :D]</center>
+                <p class="ortala"> Masa Tenisi [Bu okula gelene kadar bunda iyi olduğumu düşünmüştüm :D]
                      </p> </td>  </tr> 
         </table>
         </div>
@@ -206,7 +166,7 @@ border-image: auto;
                  <td>  <a  href="https://sifiratik.co/2018/08/27/yukselen-endise-plastik-balonlar/" target="_blank">
             <img class="fotograflar" src="balonlar.jpg" class="rounded float-end" alt="Balonlar umudun temsilcisidir" >  
             </a>
-                <p class="ortala">      <center> Balonlar umudun temsilcisidir.</center>
+                <p class="ortala">   Balonlar umudun temsilcisidir.
                      </p> </td>  </tr>  </table>
         </div>
 
@@ -218,7 +178,7 @@ border-image: auto;
                  <td>  <a  href="http://demrobotikotomasyon.com/applications/robotik-tasima-otomasyonu/" target="_blank">
             <img class="fotograflar" src="robotKolu.jpg" class="rounded float-end" alt="6 Eksenli Robot Kol" >  
             </a>
-                <p class="ortala">      <center> 6 Eksenli Robot Kol.</center>
+                <p class="ortala">      6 Eksenli Robot Kol.
                      </p> </td>  </tr>  </table>
         </div>
         <div id="item-3-2">
@@ -229,63 +189,14 @@ border-image: auto;
                  <td>  <a  href="https://reactormag.com/5-things-albus-dumbledore-should-have-told-harry-potter/" target="_blank">
             <img class="fotograflar" src="harrypotter.jpg" class="rounded float-end" alt="Harry Potter'dan bir kare" >  
             </a>
-                <p class="ortala">      <center> Ölülere üzülme Harry yaşayanlara üzül. Özellikle KYK'da yaşayanlara. </center>
+                <p class="ortala">  Ölülere üzülme Harry yaşayanlara üzül. Özellikle KYK'da yaşayanlara. 
                      </p> </td>  </tr>  </table>
         </div>
       </div>
     </div>
   </div>
-
-
-
-  <!--Müzik kısmı /Başlangıç --> 
-
-  <audio id="backgroundMusic" loop>
-    <source src="alisamadim.mp3" type="audio/mpeg">
-Müzik çalması desteklemiyor.
-</audio>
-
   
-    <script>
-      // Müzik kontrolü için gerekli değişkenler
-      var audio = document.getElementById('backgroundMusic');
-      var musicControlButton = document.getElementById('musicControlButton');
-      var isPlaying = false; // Varsayılan olarak müzik çalmıyor
-  
-      // Butona tıklama olayını dinle
-      musicControlButton.addEventListener('click', function () {
-        // Müzik çalıyorsa durdur, duruyorsa çal
-        if (isPlaying) {
-          audio.pause();
-          musicControlButton.textContent = 'Müzik Çalınsın'; // Buton metnini değiştir
-        } else {
-          audio.play();
-          musicControlButton.textContent = 'Müzik Durdurulsun'; // Buton metnini değiştir
-        }
-        // Durum değişikliğini güncelle
-        isPlaying = !isPlaying;
-      });
-  
-  
-  
-      // Sekme etkinliğini dinle
-      document.addEventListener('visibilitychange', function () {
-        // Eğer sekme etkinse (yani görünürse)
-        if (document.hidden) {
-          // Eğer sekme etkisizse (yani gizliyse)
-          // Durdurulmuşsa, müziği durdur
-          var audio = document.getElementById('backgroundMusic');
-          audio.pause();
-          musicControlButton.textContent='Müzik Durdu';
-        }
-      });
-  
-  
-  
-    </script>
-  
-    <!--Müzik kısmı /Bitiş -->
-  
+   
 
     </body>
 

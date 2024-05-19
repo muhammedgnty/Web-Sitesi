@@ -1,0 +1,43 @@
+
+
+    .hosGeldiniz {
+        background-color: aqua;
+        color: red;
+        font-family: fantasy;
+    }
+
+    .piksel200 {
+        width: 1520px;
+        height: 80px;
+        image-resolution: auto;
+        border-image: auto;
+    }
+
+    .ortala {
+        text-align: center;
+    }
+
+    .altbaslik {
+        color: darkblue;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: large;
+        font-style: oblique;
+        text-decoration: underline;
+    }
+
+    
+
+    .font {
+        color: white;
+    }
+
+    .baslikFont {
+        text-decoration: underline;
+        font-style: italic;
+    }
+
+    .ataturk {
+        background-color: white;
+        color: red;
+        font-family: 'Times New Roman', Times, serif;
+    }
