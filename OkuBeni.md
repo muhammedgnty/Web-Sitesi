@@ -3,9 +3,6 @@
        
   Bu Projenin İçeriğinde Neler Var?
        Proje içerisinde kendimi tanıttığım, hava durumu apisi kullanıp oluşturduğum, kendi memleketimi ve onun futbol kulübünü tanıtmış olduğum, içerisinde müziklerin ve iletişim formunun bulunduğu hafif esprili bir dille hazırlanan bir projedir.
-
-  Proje Hangi Programlama Dilleri Kullanılarak Hazırlandı?
-      HTML,CSS,JAVASCRIPT.... demek isterdim ama kendileri programlama dili değil. Yani programlama dilleri kullanılarak hazırlanmadı.
-
+       
    Projeyi Yapan Kişi?
    Muhammed Güntay, Sakarya Üniversitesi Bilgisayar Mühendisliği öğrencisi.
